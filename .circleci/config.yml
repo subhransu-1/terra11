@@ -1,0 +1,13 @@
+jobs:
+  build:
+    machine:
+      image: ubuntu-2004:2022.07.1
+    steps:
+      - checkout
+      # Whatever you want to do
+      - run: sudo apt-get update 
+      - run: sudo wget https://github.com/gruntwork-io/terragrunt/releases/download/v0.38.9/terragrunt_linux_arm64
+      - run: sudo mv terragrunt_linux_arm64 terragrunt
+      - run: sudo chmod u+x terragrunt
+      - run: sudo mv terragrunt /usr/local/bin/terragrunt
+      - run: sudo terragrunt --version
