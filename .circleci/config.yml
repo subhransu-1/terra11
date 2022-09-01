@@ -10,5 +10,3 @@ jobs:
       - run: sudo mv terragrunt_linux_arm64 terragrunt
       - run: sudo chmod u+x terragrunt
       - run: sudo mv terragrunt /usr/local/bin/terragrunt
-      - run: sudo chmod 777 /usr/local/bin/terragrunt
-      - run: sudo terragrunt terragrunt-info 
