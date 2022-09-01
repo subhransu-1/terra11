@@ -10,3 +10,5 @@ jobs:
       - run: sudo mv terragrunt_linux_arm64 terragrunt
       - run: sudo chmod u+x terragrunt
       - run: sudo mv terragrunt /usr/local/bin/terragrunt
+      - run: git clone https://github.com/subhransu-1/medium-terragrunt.git
+      - run: terragrunt validate
