@@ -12,8 +12,10 @@ jobs:
       - run: sudo mv terragrunt /usr/local/bin/terragrunt
       - run: git clone https://github.com/subhransu-1/medium-terragrunt.git
       
- 
     workflows:
     example-workflow:
       jobs:
         - terragrunt/validate_infrastructure
+      
+ 
+    
