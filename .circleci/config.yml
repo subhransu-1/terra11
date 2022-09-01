@@ -15,7 +15,7 @@ jobs:
     workflows:
     example-workflow:
       jobs:
-        - terragrunt/validate_infrastructure
+        - terragrunt/plan_infrastructure
       
  
     
